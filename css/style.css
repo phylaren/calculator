@@ -1,0 +1,110 @@
+:root {
+    --border: 2px solid white;
+    --padding: 20px;
+    --margin: 5px;
+    --border-radius: 5px;
+
+    --light-pink: rgb(255 182 218 / 0.3);
+    --pink: rgb(255 223 239);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%; 
+}
+
+#calculator-container {
+    border: var(--border);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 0;
+    border-color: var(--light-pink);
+}
+
+#input-container {
+    display: flex;
+}
+
+input {
+    border: var(--border);
+    padding: var(--padding);
+    margin: var(--margin);
+    border-radius: var(--border-radius);
+    width: 100%;   /* CHANGE HERE */
+    flex: 1 1 0;
+    outline: 2px solid var(--light-pink);
+}
+
+input:focus {
+    outline: 2px solid var(--light-pink);
+}
+
+#clear-backspace-container {
+    display: flex;
+}
+
+#clear {
+    flex: 1 1 0;
+}
+
+#digits-symbols-container {
+    display: flex;
+}
+
+#digits-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#zero-point-equals {
+    display: flex;
+}
+
+#mathematical-symbols{
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    border-radius: var(--border-radius);
+    border: var(--border);
+    padding: var(--padding);
+    margin: var(--margin);
+    background-color: var(--light-pink);
+    transition: all 0.3s;
+}
+
+.button:hover, .button.special:hover {
+    background-color: rgb(255 182 218);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.button.special {
+    background-color: rgb(255 182 218 / 0.6);
+}
+
+.button.equals {
+    background-color: rgb(255 131 193 / 0.7);
+}
+
+.button.equals:hover {
+    background-color: rgb(255 131 193);
+}
