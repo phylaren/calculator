@@ -50,6 +50,7 @@ input {
     width: 100%;   /* CHANGE HERE */
     flex: 1 1 0;
     outline: 2px solid var(--light-pink);
+    background-color: white;
 }
 
 input:focus {
@@ -106,5 +107,9 @@ input:focus {
 }
 
 .button.equals:hover {
+    background-color: rgb(255 131 193);
+}
+
+.button.special.selected {
     background-color: rgb(255 131 193);
 }
