@@ -113,3 +113,9 @@ input:focus {
 .button.special.selected {
     background-color: rgb(255 131 193);
 }
+
+
+/*Tooltips*/
+.button:hover::after {
+    
+}

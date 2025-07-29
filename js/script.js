@@ -202,6 +202,7 @@ function calcFunctionalityKeyboard(e) {
 
         case "=":
         case "Enter":
+        case "e":
             calculate();
             nextNum = true;
             break;
